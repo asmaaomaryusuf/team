@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            java6
+        </title>
+        <body style="background-color:beige ;">
+            <h1>Add your skills</h1>
+            <br>
+          <form>
+            <input type="text" id="deta" style="width:300px ;" >
+            <input type="button" name="button" value="Add" style="background-color:rgb(167, 230, 226) ;" onclick="print()">
+          </form>
+          <br>
+          <h1>your skills:</h1>
+          <br>
+          <div style="height:200px ;border:2px solid black;padding: 20px;" id="par"></div>
+           
+            <script>
+             
+               
+             function print(){  
+                var deta=document.getElementById("deta").value;
+                
+                let sp=document.createElement("span")
+                sp.style.backgroundColor="rgb(167, 230, 226)";
+                sp.style.display="inline-block";
+                sp.style.padding="20px"
+                sp.style.marginLeft="10px";
+                sp.innerHTML=deta;
+                let dev=document.getElementById("par");
+                dev.appendChild(sp);
+
+             }
+            
+            </script>
+        </body>
+    </head>
+</html>
